@@ -89,5 +89,11 @@ ll.make_cycle(2)
 # ll.traverse() # will go in infinite because it's a cycle
 ll.detect_cycle()
 
-
+# Appended node: Head -> 2 Tail -> 2
+# Appended node: Head -> 2 Tail -> 7
+# Appended node: Head -> 2 Tail -> 11
+# Appended node: Head -> 2 Tail -> 20
+# Traversal: [2] -> [7] -> [11] -> [20] -> [None]
+# Traversal: [2] -> [7] -> [21] -> [11] -> [20] -> [None]
+# Not a cycle
 
