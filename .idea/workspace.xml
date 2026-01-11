@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23af255-648c-479b-9a94-c7110c411c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/anagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_highest_element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/two_sum_problems.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reverse_a_string.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768124398534</updated>
       <workItem from="1768124399534" duration="3445000" />
-      <workItem from="1768129029774" duration="4117000" />
+      <workItem from="1768129029774" duration="5230000" />
     </task>
     <servers />
   </component>
