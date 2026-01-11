@@ -1,3 +1,5 @@
+Terraform, AWS, FE, Python, DSA, Databricks
+
 3. JPMC, 9th Jan 2026 [Heavy Python]
 -----------------
 - Tuple versus List using code, why Tuple is immutable, Can we add an elements in tuple, why?
@@ -24,11 +26,12 @@
 - Middleware
 - Assembly
 - reverse string
-- Second highest element from an array
+- Second-highest element from an array
 
 1. JPMC, Java, Ashwini
 ----------------------
-- Find duplicate occurences, how many number divisible by givem number
+- Find duplicate occurrences
+- How many number divisible by given number
 - Kadane`s
 
 0. Shared by Neha
