@@ -1,6 +1,6 @@
 Terraform, AWS, FE, Python, DSA, Databricks
 
-3. JPMC, 9th Jan 2026 [Heavy Python]
+1. JPMC, 9th Jan 2026 [Heavy Python]
 -----------------
 - Tuple versus List using code, why Tuple is immutable, Can we add an elements in tuple, why?
 - Shallow copy versus deep copy using code example.
@@ -11,7 +11,7 @@ Terraform, AWS, FE, Python, DSA, Databricks
 - What is abstract in python?
 - [x] Linked List and detect cycle and list
 
-2. JPMC, Dot NET., 18th Dec 2026
+1. JPMC, Dot NET., 18th Dec 2026
 --------------------------------
 - Agile
 - Constructors
@@ -34,7 +34,7 @@ Terraform, AWS, FE, Python, DSA, Databricks
 - How many number divisible by given number
 - Kadane`s
 
-0. Shared by Neha
+1. Shared by Neha
 -----------------
 - Data types and data structures
 - Diff b/w list and tuple
