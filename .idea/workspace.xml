@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23af255-648c-479b-9a94-c7110c411c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/others" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking_lot_problem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview experience 4th Round" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview Questions JPMC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Interview Questions JPMC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview in JPMC.md" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC Interview Q&amp;A.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview Questions JPMC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JPMC Interview Q&amp;A.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +83,11 @@
       <workItem from="1768326068794" duration="1386000" />
       <workItem from="1768370841680" duration="1314000" />
       <workItem from="1768383674981" duration="681000" />
+      <workItem from="1768557216512" duration="600000" />
+      <workItem from="1768580831608" duration="596000" />
+      <workItem from="1768627085575" duration="598000" />
+      <workItem from="1768799130555" duration="598000" />
+      <workItem from="1768883488773" duration="2006000" />
     </task>
     <servers />
   </component>
