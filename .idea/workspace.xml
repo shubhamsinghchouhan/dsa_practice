@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23af255-648c-479b-9a94-c7110c411c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Interview experience 4th Round" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Material/29th Jan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Material/Shared by Neha" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview Questions JPMC.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JPMC Interview Q&amp;A.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Material/JPMC Interview Q&amp;A.md" beforeDir="false" afterPath="$PROJECT_DIR$/Material/12th Jan.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.308" />
         <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
       </set>
     </attachedChunks>
@@ -87,7 +85,7 @@
       <workItem from="1768580831608" duration="596000" />
       <workItem from="1768627085575" duration="598000" />
       <workItem from="1768799130555" duration="598000" />
-      <workItem from="1768883488773" duration="2006000" />
+      <workItem from="1768883488773" duration="2250000" />
     </task>
     <servers />
   </component>
