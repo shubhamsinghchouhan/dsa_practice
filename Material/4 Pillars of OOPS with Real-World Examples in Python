@@ -1,0 +1,475 @@
+# 4 Pillars of OOPS with Real-World Examples in Python
+
+The **4 pillars of OOPS (Object-Oriented Programming)** are:
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+---
+
+# ✅ 1. Encapsulation
+
+## 👉 Definition
+
+Encapsulation means **binding data (variables) and methods (functions) together inside a single unit (class)** and **restricting direct access** to some data.
+
+It protects data from accidental modification and enforces controlled access.
+
+---
+
+## 👉 Real-World Example
+
+### 🏦 Bank Account
+
+When you use a bank account:
+
+* You cannot directly change your balance
+* You must use methods like:
+
+  * `deposit()`
+  * `withdraw()`
+
+The bank hides internal balance logic → This is encapsulation.
+
+---
+
+## 👉 Python Implementation
+
+Python does not have strict private variables like Java but uses **naming conventions**.
+
+### ✔ Public
+
+```python
+self.name
+```
+
+### ✔ Protected (convention only)
+
+```python
+self._balance
+```
+
+### ✔ Private (name mangling)
+
+```python
+self.__balance
+```
+
+---
+
+### ✔ Example
+
+```python
+class BankAccount:
+
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance   # Private variable
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
+
+    def get_balance(self):
+        return self.__balance
+```
+
+---
+
+### ✔ Usage
+
+```python
+account = BankAccount("Krati", 5000)
+
+account.deposit(2000)
+account.withdraw(1000)
+
+print(account.get_balance())
+```
+
+---
+
+### ✔ Why Encapsulation is Important
+
+* ✅ Data protection
+* ✅ Prevents unauthorized access
+* ✅ Makes code maintainable
+* ✅ Controls data modification
+
+---
+
+# ✅ 2. Abstraction
+
+## 👉 Definition
+
+Abstraction means **hiding implementation details and showing only essential features**.
+
+User knows **what system does**, not **how it does**.
+
+---
+
+## 👉 Real-World Example
+
+### 🚗 Car Driving
+
+When you drive:
+
+* You press accelerator
+* You press brake
+* You turn steering
+
+You do NOT know:
+
+* Engine combustion logic
+* Transmission gear operations
+
+That complexity is hidden → Abstraction.
+
+---
+
+## 👉 Python Implementation
+
+Python provides abstraction using:
+
+* Abstract Base Classes (ABC)
+* `@abstractmethod`
+
+---
+
+### ✔ Example
+
+```python
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+
+    @abstractmethod
+    def pay(self, amount):
+        pass
+```
+
+---
+
+### ✔ Concrete Implementations
+
+```python
+class CreditCardPayment(Payment):
+
+    def pay(self, amount):
+        print(f"Paid {amount} using Credit Card")
+
+
+class UpiPayment(Payment):
+
+    def pay(self, amount):
+        print(f"Paid {amount} using UPI")
+```
+
+---
+
+### ✔ Usage
+
+```python
+payment1 = CreditCardPayment()
+payment1.pay(1000)
+
+payment2 = UpiPayment()
+payment2.pay(500)
+```
+
+---
+
+### ✔ Why Abstraction is Important
+
+* ✅ Reduces complexity
+* ✅ Improves security
+* ✅ Improves scalability
+* ✅ Allows interface-based design
+
+---
+
+# ✅ 3. Inheritance
+
+## 👉 Definition
+
+Inheritance allows a class to **reuse properties and methods from another class**.
+
+---
+
+## 👉 Real-World Example
+
+### 👨‍👩‍👧 Family
+
+Child inherits:
+
+* Eye color
+* Height
+* Traits
+
+Similarly, child classes inherit parent class functionality.
+
+---
+
+## 👉 Python Implementation
+
+### ✔ Base Class
+
+```python
+class Vehicle:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print("Vehicle is starting")
+```
+
+---
+
+### ✔ Child Class
+
+```python
+class Car(Vehicle):
+
+    def __init__(self, brand, model):
+        super().__init__(brand)
+        self.model = model
+
+    def display(self):
+        print(self.brand, self.model)
+```
+
+---
+
+### ✔ Usage
+
+```python
+car = Car("Toyota", "Camry")
+
+car.start()
+car.display()
+```
+
+---
+
+## 👉 Types of Inheritance in Python
+
+### ✔ Single Inheritance
+
+One parent → One child
+
+### ✔ Multiple Inheritance
+
+Multiple parents → One child
+
+```python
+class A:
+    pass
+
+class B:
+    pass
+
+class C(A, B):
+    pass
+```
+
+### ✔ Multilevel Inheritance
+
+Grandparent → Parent → Child
+
+### ✔ Hierarchical Inheritance
+
+One parent → Multiple children
+
+---
+
+### ✔ Why Inheritance is Important
+
+* ✅ Code reuse
+* ✅ Reduces redundancy
+* ✅ Improves maintainability
+* ✅ Supports hierarchical design
+
+---
+
+# ✅ 4. Polymorphism
+
+## 👉 Definition
+
+Polymorphism means **same interface, different behavior**.
+
+"Poly" → many
+"Morph" → forms
+
+---
+
+## 👉 Real-World Example
+
+### 📱 Payment System
+
+One method:
+
+```
+pay()
+```
+
+But behavior changes:
+
+* Credit Card → Different logic
+* UPI → Different logic
+* Net Banking → Different logic
+
+---
+
+## 👉 Types of Polymorphism in Python
+
+---
+
+## ✔ Method Overriding (Runtime Polymorphism)
+
+Child class overrides parent method.
+
+---
+
+### Example
+
+```python
+class Animal:
+
+    def sound(self):
+        print("Animal makes sound")
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Dog barks")
+
+
+class Cat(Animal):
+
+    def sound(self):
+        print("Cat meows")
+```
+
+---
+
+### ✔ Usage
+
+```python
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.sound()
+```
+
+---
+
+## ✔ Duck Typing (Python Special Feature)
+
+Python focuses on **behavior**, not type.
+
+---
+
+### Example
+
+```python
+class Bird:
+    def fly(self):
+        print("Bird can fly")
+
+
+class Airplane:
+    def fly(self):
+        print("Airplane can fly")
+
+
+def start_flying(obj):
+    obj.fly()
+
+
+start_flying(Bird())
+start_flying(Airplane())
+```
+
+---
+
+### ✔ Why Polymorphism is Important
+
+* ✅ Improves flexibility
+* ✅ Enables dynamic behavior
+* ✅ Promotes loose coupling
+* ✅ Easier extensibility
+
+---
+
+# ⭐ Combined Real-World Example (All 4 Pillars Together)
+
+## Payment Gateway System
+
+```python
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+
+    def __init__(self, user):
+        self.user = user          # Encapsulation
+
+    @abstractmethod
+    def pay(self, amount):
+        pass
+
+
+class CreditCardPayment(Payment):     # Inheritance
+
+    def pay(self, amount):            # Polymorphism
+        print(f"{self.user} paid {amount} via Credit Card")
+
+
+class UpiPayment(Payment):
+
+    def pay(self, amount):
+        print(f"{self.user} paid {amount} via UPI")
+```
+
+---
+
+### ✔ Usage
+
+```python
+payments = [
+    CreditCardPayment("Krati"),
+    UpiPayment("Rahul")
+]
+
+for p in payments:
+    p.pay(1000)
+```
+
+---
+
+# ✅ Summary Table
+
+| Pillar        | Purpose                            | Real World Example |
+| ------------- | ---------------------------------- | ------------------ |
+| Encapsulation | Data hiding                        | Bank account       |
+| Abstraction   | Hide complexity                    | Car driving        |
+| Inheritance   | Code reuse                         | Family traits      |
+| Polymorphism  | Same interface, different behavior | Payment modes      |
+
+---
+
+# ⭐ Interview Level Explanation (One-Liner)
+
+* **Encapsulation** → Data hiding
+* **Abstraction** → Hiding implementation
+* **Inheritance** → Code reuse
+* **Polymorphism** → Multiple behaviors using same interface
